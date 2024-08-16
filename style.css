@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+.card{
+
+    width:90%;
+    max-width: 500px;
+    background:linear-gradient(45deg,rgb(239, 196, 117,0.9) , rgb(143, 204, 247,0.7));
+    color: white;
+    margin: 30px auto;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px 20px;
+    /* display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items:center; */
+    
+
+}
+.card .search{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    gap: 10px;
+    align-items: center;
+}
+.card .search input {
+    border:0;
+    outline: 0;
+    background-color: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+    border-radius: 10px;
+    color: black;
+    
+    /* width: 70%; */
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+.card .search button{
+    border:0;
+    outline: 0;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px;
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.card .weather{
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card .search button img{
+    width: 20px;
+    flex: 1;
+}
+.card .weather img{
+    width:56%;
+    padding: 10%;
+}
+.card .details{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+    
+    
+}
+.card .details .col{
+    background-color: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+    border-radius: 10px;
+
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    
+    
+}
+
+.col .icon{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+}
+.card .details .col img{
+    width: 55px;
+    height: 55px;
+    
+}
+.card .weather,.card .details{
+    display: none;
+}
